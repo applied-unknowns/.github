@@ -34,7 +34,7 @@ These are interim user accounts. They will be replaced by one GitHub App per ven
 | 12 | Writing is plain and literal. Spell out each acronym at first use. Avoid em dashes. Agent conclusions are labeled as agent conclusions; statements attributed to Justin are things he said. | Set |
 | 13 | Changes to `AGENTS.md`, `CODEOWNERS`, the pull request template, and workflow files require Justin's review as code owner. | Set |
 
-The pull request ruleset is active. Justin has an admin override for pull requests he authors. Agents have no bypass. Required code-owner approvals are not yet enabled; rule 13 states the review policy and `CODEOWNERS` prepares for platform enforcement.
+The pull request ruleset is active. As organization admin, Justin can merge a pull request without its required approvals; he cannot push directly to main. Agents have no bypass. Required code-owner approvals are not yet enabled; rule 13 states the review policy and `CODEOWNERS` prepares for platform enforcement.
 
 ## Authoring a pull request
 
