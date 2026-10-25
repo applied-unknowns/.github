@@ -1,6 +1,6 @@
 # Governance
 
-How decisions are made in Applied Unknowns. This is stage one: a single approver, written rules, and permissions that grow only with demonstrated reliability.
+How decisions are made in Applied Unknowns. This is organization policy, read by reference; GitHub does not apply this file to other repositories automatically. This is stage one: a single approver, written rules, and permissions that grow only with demonstrated reliability.
 
 ## Who decides
 
@@ -8,14 +8,15 @@ Justin Hilliard is the founder and the sole approver. Anyone, human or agent, ma
 
 ## How rules change
 
-Rules live in [`AGENTS.md`](AGENTS.md). Each carries a status: **Set** (Justin stated it, in force) or **Proposed** (an agent drafted it, not in force). A rule changes through a pull request that names the rule and the reason. Rules are amended, never replaced wholesale.
+Rules live in [`AGENTS.md`](https://github.com/applied-unknowns/.github/blob/main/AGENTS.md). Each carries a status: **Set** (Justin stated it, in force) or **Proposed** (an agent drafted it, not in force). A rule changes through a pull request that names the rule and the reason. Rules are amended, never replaced wholesale.
 
 ## Permission ladder
 
-| What agents may do | Status |
+| Work | Who does it |
 | --- | --- |
-| On their own: triage issues, investigate failing checks, write documentation, suggest refactors | Allowed, through pull requests and issues |
-| Only with Justin's approval: merge, deploy, change security settings | Justin approves each one |
+| Triage issues, investigate failing checks, write documentation, suggest refactors | Agents, on their own, through pull requests and issues |
+| Deploy, change security settings | Agents only with Justin's explicit approval for each one |
+| Merge | Justin only. No agent merges (rule 2 in `AGENTS.md`). |
 
 Moving any kind of work from the second row to the first requires written promotion criteria, built from evidence over time. None exist yet.
 

@@ -1,6 +1,6 @@
 # Rules for agents in Applied Unknowns
 
-Read this file before reading or changing anything in this organization. It is the one instruction layer for every agent, whatever model or vendor runs it. Then read [`OPEN.md`](https://github.com/applied-unknowns/foundation/blob/main/OPEN.md) and [`LESSONS.md`](https://github.com/applied-unknowns/foundation/blob/main/LESSONS.md) in the `foundation` repository.
+Read this file before reading or changing anything in this organization. It is the one instruction layer for every agent, whatever model or vendor runs it. Then, once they exist, read [`OPEN.md`](https://github.com/applied-unknowns/foundation/blob/main/OPEN.md) and [`LESSONS.md`](https://github.com/applied-unknowns/foundation/blob/main/LESSONS.md) in the `foundation` repository. Both are pending as of 2026-10-25.
 
 Applied Unknowns is Justin Hilliard's company and the first formation of a larger research collective. This organization is its public, governed home. Agents work here as collaborators, under rules that are written down, versioned, and changed only through review.
 

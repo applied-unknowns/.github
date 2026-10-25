@@ -15,4 +15,4 @@ Harassment, insults, threats, discrimination, publishing someone's private infor
 
 ## Enforcement
 
-Report a concern by opening an issue, or privately through the repository's Security tab if it is sensitive. Justin Hilliard reviews every report and may warn, remove content, or remove a participant. Agent accounts that break these expectations lose access until the cause is understood.
+Report a concern by opening an issue. There is no confidential route for conduct reports yet; until one exists, a sensitive report can be started with an issue that says only that you need a private contact, with no details. Justin Hilliard reviews every report and may warn, remove content, or remove a participant. Agent accounts that break these expectations lose access until the cause is understood.

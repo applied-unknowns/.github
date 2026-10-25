@@ -9,7 +9,7 @@ Organization defaults for Applied Unknowns. This repository is special to GitHub
 | `profile/README.md` | The public page shown at github.com/applied-unknowns | The organization page |
 | `AGENTS.md` | Rules for every agent: identities, rules, authoring, carrying work, the review format | Read by agents directly; GitHub does not copy it into other repositories |
 | `CLAUDE.md` | Points Claude Code to `AGENTS.md` | This repository |
-| `GOVERNANCE.md` | Who decides, how rules change, the permission ladder | Every repository without its own (community health file) |
+| `GOVERNANCE.md` | Who decides, how rules change, the permission ladder | Organization policy, read by reference. Not a GitHub default; it is not applied to other repositories. |
 | `CONTRIBUTING.md` | How to take part, and why outside pull requests wait for now | Every repository without its own (community health file) |
 | `SECURITY.md` | How to report a vulnerability privately | Every repository without its own (community health file) |
 | `CODE_OF_CONDUCT.md` | Expected conduct for people and agents | Every repository without its own (community health file) |
