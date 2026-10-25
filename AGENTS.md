@@ -1,6 +1,6 @@
 # Rules for agents in Applied Unknowns
 
-Read this file before reading or changing anything in this organization. It is the one instruction layer for every agent, whatever model or vendor runs it.
+Read this file before reading or changing anything in this organization. It is the one instruction layer for every agent, whatever model or vendor runs it. Then read [`OPEN.md`](https://github.com/applied-unknowns/foundation/blob/main/OPEN.md) and [`LESSONS.md`](https://github.com/applied-unknowns/foundation/blob/main/LESSONS.md) in the `foundation` repository.
 
 Applied Unknowns is Justin Hilliard's company and the first formation of a larger research collective. This organization is its public, governed home. Agents work here as collaborators, under rules that are written down, versioned, and changed only through review.
 
@@ -8,11 +8,11 @@ Every rule carries a status. **Set** means Justin stated it and it is in force. 
 
 ## Identities
 
-| Account | Who it is | Used for |
-| --- | --- | --- |
-| `jhilliardx` | Justin. Organization owner and sole approver. | Approving, merging, settings. Never used by an agent for agent work. |
-| `jhilliardx-claude-ai` | Claude (Anthropic), member of the `agents` team | Authoring branches, pull requests, reviews, issues |
-| `jhilliardx-chatgpt-ai` | ChatGPT (OpenAI), member of the `agents` team | Authoring branches, pull requests, reviews, issues |
+| Account | Who it is | Used for | Branch prefix | Commit email |
+| --- | --- | --- | --- | --- |
+| `jhilliardx` | Justin. Organization owner and sole approver. | Approving, merging, settings. Never used by an agent for agent work. | `jhilliardx/` | `151980015+jhilliardx@users.noreply.github.com` |
+| `jhilliardx-claude-ai` | Claude (Anthropic), member of the `agents` team | Authoring branches, pull requests, reviews, issues | `claude/` | `347296035+jhilliardx-claude-ai@users.noreply.github.com` |
+| `jhilliardx-chatgpt-ai` | ChatGPT (OpenAI), member of the `agents` team | Authoring branches, pull requests, reviews, issues | `chatgpt/` | `347296528+jhilliardx-chatgpt-ai@users.noreply.github.com` |
 
 These are interim user accounts. They will be replaced by one GitHub App per vendor once agents run through application programming interface (API) access.
 
@@ -33,6 +33,9 @@ These are interim user accounts. They will be replaced by one GitHub App per ven
 | 11 | Before building, the author plays back the target and assumptions in a few lines. When something misses, correct the target instead of patching the output. | Set |
 | 12 | Writing is plain and literal. Spell out each acronym at first use. Avoid em dashes. Agent conclusions are labeled as agent conclusions; statements attributed to Justin are things he said. | Set |
 | 13 | Changes to `AGENTS.md`, `CODEOWNERS`, the pull request template, and workflow files require Justin's review as code owner. | Set |
+| 14 | A branch is named `<prefix>/<short-purpose>`, where the prefix belongs to the account that pushes it (see Identities). | Proposed |
+| 15 | Co-author credit uses the account's commit email from the Identities table, never a vendor's generic address. A generic vendor address credits the vendor's own GitHub account, which is outside this organization. | Proposed |
+| 16 | A pull request merged without an independent review states why in the pull request, and the exception is logged in `foundation/LESSONS.md`. | Proposed |
 
 The pull request ruleset is active. As organization admin, Justin can merge a pull request without its required approvals; he cannot push directly to main. Agents have no bypass. Required code-owner approvals are not yet enabled; rule 13 states the review policy and `CODEOWNERS` prepares for platform enforcement.
 
@@ -43,6 +46,18 @@ The pull request ruleset is active. As organization admin, Justin can merge a pu
 3. Keep one purpose per pull request.
 4. Open as a draft until the content is complete, then mark it ready for review.
 5. When review comes back, apply every BLOCKING item or reply in its thread explaining why not. Reply to every thread. Do not resolve threads you did not open; the reviewer or Justin resolves them.
+
+## Carrying an agent's work
+
+Some sessions cannot push to some repositories. Claude's cloud sessions, for example, cannot push to any repository whose name begins with a dot, including this one. In that case the agent drafts the files and Justin carries them. Steps, in order:
+
+1. The agent sends every file, the commit title and description, and the pull request title and body. The commit description names the drafter, any editors, and who uploaded, and ends with a co-author line for each contributing agent:
+   `Co-Authored-By: jhilliardx-claude-ai <347296035+jhilliardx-claude-ai@users.noreply.github.com>`
+   Each trailer is on its own line, with angle brackets, at the very end.
+2. Justin uploads the root files with Add file, then Upload files, onto a new branch under his prefix (`jhilliardx/<purpose>`). The web uploader flattens folders, so files in a subfolder are added afterward with Add file, then Create new file, typing the full path (for example `profile/README.md`) and committing to the same branch.
+3. Propose changes creates the branch, not the pull request. Click Create pull request and confirm a pull request number exists.
+4. The reviewer reviews under the rules below.
+5. Justin squash-merges and replaces GitHub's default squash message, which stacks every branch commit message, with the clean title and description from step 1. The branch commit messages do not survive a squash; the merge message does.
 
 ## Reviewing a pull request
 

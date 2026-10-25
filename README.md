@@ -7,9 +7,16 @@ Organization defaults for Applied Unknowns. This repository is special to GitHub
 | Path | What it does | Applies to |
 | --- | --- | --- |
 | `profile/README.md` | The public page shown at github.com/applied-unknowns | The organization page |
-| `AGENTS.md` | Rules for every agent working in the organization: identities, authoring, the review format | Read by agents directly; GitHub does not copy it into other repositories |
-| `PULL_REQUEST_TEMPLATE.md` | The default pull request body | Every repository that has no template of its own |
+| `AGENTS.md` | Rules for every agent: identities, rules, authoring, carrying work, the review format | Read by agents directly; GitHub does not copy it into other repositories |
+| `CLAUDE.md` | Points Claude Code to `AGENTS.md` | This repository |
+| `GOVERNANCE.md` | Who decides, how rules change, the permission ladder | Every repository without its own (community health file) |
+| `CONTRIBUTING.md` | How to take part, and why outside pull requests wait for now | Every repository without its own (community health file) |
+| `SECURITY.md` | How to report a vulnerability privately | Every repository without its own (community health file) |
+| `CODE_OF_CONDUCT.md` | Expected conduct for people and agents | Every repository without its own (community health file) |
+| `PULL_REQUEST_TEMPLATE.md` | The default pull request body | Every repository without its own |
 | `CODEOWNERS` | Names Justin as the reviewer for rule files | This repository only |
+
+The organization's working records (open items, backlog, lessons, and the repository index) live in the [`foundation`](https://github.com/applied-unknowns/foundation) repository, so agents can update them without carrying files into this one.
 
 ## What does not carry over
 
