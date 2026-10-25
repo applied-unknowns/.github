@@ -17,7 +17,7 @@ GitHub uses defaults from this repository for supported community health files (
 
 ## How changes are made
 
-Through a branch and a pull request, reviewed under the format in `AGENTS.md`, merged by Justin. Direct pushes to `main` are blocked by the organization ruleset. Justin has an admin override for pull requests he authors. Required code-owner approvals are not yet enabled; `CODEOWNERS` prepares for that enforcement.
+Through a branch and a pull request, reviewed under the format in `AGENTS.md`, merged by Justin. Direct pushes to `main` are blocked by the organization ruleset. As organization admin, Justin can merge a pull request without its required approvals; he cannot push directly to main. Required code-owner approvals are not yet enabled; `CODEOWNERS` prepares for that enforcement.
 
 ---
 
