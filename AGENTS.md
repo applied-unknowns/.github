@@ -36,6 +36,7 @@ These are interim user accounts. They will be replaced by one GitHub App per ven
 | 14 | A branch is named `<prefix>/<short-purpose>`, where the prefix belongs to the account that pushes it (see Identities). | Proposed |
 | 15 | Co-author credit uses the account's commit email from the Identities table, never a vendor's generic address. A generic vendor address credits the vendor's own GitHub account, which is outside this organization. | Proposed |
 | 16 | A pull request merged without an independent review states why in the pull request, and the exception is logged in `foundation/LESSONS.md`. | Proposed |
+| 17 | Collaborative resolution and critical objections: Following independent review, agents attempt bounded evidence-based reconciliation and preserve material dissent. A credible critical objection prevents the objecting agent from endorsing the affected work and triggers narrowly scoped containment and owner escalation if unresolved; it never grants an agent authority over Justin's decision. Existing Set rules and technical controls remain binding unless changed through their authorized process. | Proposed |
 
 The pull request ruleset is active. As organization admin, Justin can merge a pull request without its required approvals; he cannot push directly to main. Agents have no bypass. Required code-owner approvals are not yet enabled; rule 13 states the review policy and `CODEOWNERS` prepares for platform enforcement.
 
@@ -95,6 +96,31 @@ BLOCKING means the pull request should not merge without the change. Everything 
 | ready-to-publish | Documents and pages a stranger will read | Accuracy against sources, clarity for a cold reader, claims that overreach, rule 12 |
 | governance | Anything that changes rules, permissions, templates, or workflows | Everything in ready-to-publish, plus one required line: "What this lets an agent do that it could not do before." |
 | cross-read | Comparing independent drafts of the same thing | One question only: what did the other drafts get right that this one missed? No ranking. |
+
+## Collaborative resolution and critical objections (Proposed)
+
+Purpose and authority. This section supplements, but does not replace, the independent-review, pull-request, and owner-approval requirements above. It is Proposed until Justin accepts it through the reviewed governance-change process. An agent's objection cannot veto Justin, rewrite Set rules, grant permissions, or silently bypass applicable GitHub, security, or other technical controls. No agent may claim endorsement on behalf of another agent.
+
+1. Independent assessment first. Each participating agent forms its initial finding independently, as required by Set rule 6. After those findings exist, the proposer may respond and the agents attempt to reconcile material differences into one recommended disposition. The shared record distinguishes what all named agents actually endorsed from any minority or dissenting positions.
+
+2. Qualifying critical objections. A critical objection must credibly identify at least one of:
+
+Security, privacy, integrity, safety, or authority failure: a material risk of violating binding requirements, exposing protected information, corrupting accepted state, crossing a trust boundary, or performing an unauthorized action.
+Goal-invalidating defect: a material architectural flaw or evidentiary gap likely to invalidate an approved objective, a required acceptance test, or the validity of a purported result.
+
+Ratified mission or scope diversion: a material, unnecessary deviation from a specific Set or otherwise explicitly owner-ratified mission requirement, objective, or scope boundary. Cite the exact controlling record. An unratified mission preference or proposed charter statement is not sufficient for a critical objection on this ground; raise it as an ordinary architectural disagreement for Justin instead.
+
+An objection is not critical merely because an agent labels it critical. State the affected requirement and source, severity, credible consequence, evidence or reproduction steps where available, uncertainties, and the smallest affected action. If supporting evidence is confidential, do not publish it to public issues or pull requests; provide a sanitized description and ask Justin for an authorized nonpublic verification path. If none exists, stop the potentially disclosing action and escalate.
+
+3. Contain only the affected action. An objecting agent does not certify or perform an affected action it regards as credibly unsafe or unauthorized. Other participating agents should pause the affected delegated endorsement, promotion, release, or privileged operation while the claim receives bounded assessment, but unaffected work continues. A critical objection does not give its author power to halt unrelated tasks, cancel owner authority, or change branch protections. Existing binding controls continue to apply regardless of the objection's status.
+
+4. Bounded challenge and reconciliation. Default to one substantive assessment round per participating agent after the independent first findings. In that round, challenge the evidence, attempt reproduction where permitted, assess severity, and propose the smallest mitigation or safe alternative. Record disagreements and evidence. This is a limit on unproductive negotiation, not a limit on later verification of newly revised commits or artifacts. Do not start expensive research, new infrastructure, deployment, or privileged tests without the approvals otherwise required.
+
+5. Record the disposition. Give every material objection an explicit outcome: validated, mitigated, refuted, unresolved, or accepted as a risk by Justin. Record who assessed and actually endorsed the result, the relevant source and revision, remaining uncertainty, and the next permitted action. Preserve credible minority objections and their evidence even when the majority favors a proposal. Silence, elapsed time, an agent's self-report, or another agent's assertion of consensus does not imply agreement.
+
+6. Escalate without an indefinite agent veto. Justin may call for escalation at any time; an assessment not finished by then goes to him as it stands, with its incomplete evidence and unanswered questions clearly labeled. After the bounded assessment, escalate unresolved material objections to Justin with: the controlling requirement, affected work, competing positions, evidence and uncertainty, mitigation options, and the exact decision sought. An unresolved substantiated critical objection prevents an agent-level consensus or independent-approval claim on the affected work; it does not prevent Justin from deciding. Justin can approve, reject, narrow, defer, request further tests, or amend policy through the existing pull-request process. If proceeding despite a remaining objection, the decision record identifies the dissent, risk, rationale, and applicable controls. No decision or risk acceptance constitutes permission for an agent to ignore existing Set rules, repository protections, or security requirements. Those must be changed, where change is permissible, through the authorized process before incompatible actions occur.
+
+7. Close the loop. Resume affected work only after the decision and all required authorization and technical prerequisites are recorded, or close it as rejected, superseded, or deferred with rationale. Use existing pull-request and issue records and, when owner attention is needed, foundation/OPEN.md; do not create a parallel backlog. An agent may withhold its own endorsement without preventing owner disposition or continuing unrelated authorized work.
 
 ## After merge
 
