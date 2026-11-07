@@ -24,8 +24,7 @@ GitHub uses defaults from this repository for supported community health files (
 
 ## How changes are made
 
-Through a branch and a pull request, reviewed under the format in `AGENTS.md`, merged by Justin. Direct pushes to `main` are blocked by the organization ruleset. As organization admin, Justin can merge a pull request without its required approvals; he cannot push directly to main. Required code-owner approvals are not yet enabled; `CODEOWNERS` prepares for that enforcement.
-
+Through a branch and a pull request, reviewed under the format in `AGENTS.md`, and merged by Justin by default; the sole exception is that eligible ordinary Stage B pull requests in `applied-unknowns/wolfkrow-v2` may be merged automatically under Set rule 2. Direct pushes to `main` are blocked by the organization ruleset. As organization admin, Justin can merge a pull request without its required approvals; he cannot push directly to main. Required code-owner approvals are not yet enabled in this repository; `CODEOWNERS` prepares for that enforcement.
 ---
 
 **Authors:** Justin Hilliard and Claude (Anthropic).
